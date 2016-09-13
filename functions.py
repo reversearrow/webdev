@@ -27,11 +27,11 @@ def rot13(text):
         return rot13
 
 
-def valid_username(username):
+def valid_username(username):d
     return USER_RE.match(username)
 
 def valid_password(password):
-    return PASSWORD_RE.match(username)
+    return PASSWORD_RE.match(passwor)
 
 def valid_email(email):
-    return EMAIL_RE.match(username)
+    return EMAIL_RE.match(email)
