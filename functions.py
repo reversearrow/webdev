@@ -31,7 +31,13 @@ def valid_username(username):
     return USER_RE.match(username)
 
 def valid_password(password):
-    return PASSWORD_RE.match(username)
+    return PASSWORD_RE.match(password)
 
 def valid_email(email):
-    return EMAIL_RE.match(username)
+    return EMAIL_RE.match(email)
+
+def verify_password(password,verify):
+    if password == verify:
+        return True
+    else:
+        return False
