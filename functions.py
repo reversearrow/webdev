@@ -8,8 +8,6 @@ def rot13(text):
         alphabets = {"a":"n","b":"o","c":"p","d":"q","e":"r","f":"s","g":"t","h":"u","i":"v","j":"w","k":"x","l":"y","m":"z","n":"a","o":"b","p":"c","q":"d","r":"e","s":"f","t":"g","u":"h","v":"i","w":"j","x":"k","y":"l","z":"m"}
         alphabets_list = ["a","b","c","d","e","f","g","h","i","j","k","l","m"]
         rot13 = ""
-        test_text = cgi.escape(text,quote=True)
-        print test_text
         for i in text:
                 if i != " " and ord(i) > 63 and ord(i) < 123:
                         if i.islower():
@@ -35,9 +33,12 @@ def valid_password(password):
 
 def valid_email(email):
     return EMAIL_RE.match(email)
+<<<<<<< HEAD
 
 def verify_password(password,verify):
     if password == verify:
         return True
     else:
         return False
+=======
+>>>>>>> origin/master
